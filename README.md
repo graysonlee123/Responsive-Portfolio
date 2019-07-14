@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive portfolio practice using media queries.
+# Basic-Portfolio
+Basic Portfolio for the first homework assignment.
