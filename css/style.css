@@ -35,6 +35,14 @@ section p:nth-last-of-type(1) {
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
 }
 
 h1 {
@@ -45,12 +53,6 @@ h1 {
     padding: 25px 40px;
     font-size: 30px;
     font-weight: bold;
-}
-
-.header-container {
-    width: 960px;
-    margin: 0 auto;
-    overflow: auto;
 }
 
 nav {
@@ -75,10 +77,11 @@ nav a:hover {
 /* Index or About Styles */ 
 
 .container {
+    max-width: 960px;
     clear: left;
-    width: 960px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 40px auto 100px;
+    margin: 40px auto;
     padding: 20px;
     border: 1px solid #dddddd;
     overflow: auto;
@@ -202,7 +205,7 @@ nav a:hover {
 /* Footer Styles */
 
 .content {
-    min-height: calc(100vh - 164px);
+    min-height: calc(100vh - 104px);
 }
 
 footer {
@@ -212,4 +215,63 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
+}
+
+/* media queries */
+
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: 700px;
+        margin: 40px 5%;
+    }
+
+    /* portfolio */
+
+    .project-container {
+        width: 48%;
+        margin: 20px 1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width:600px;
+        margin: 40px auto;
+    }
+    
+    /* contact */
+    #contact-container {
+        width: 90%;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 400px;
+        margin: 40px auto;
+    }
+    #about-image {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    h1, nav {
+        float: none;
+    }
+    .header-container {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        padding-bottom: 31px;
+    }
+    
+    /* portfolio */
+
+    .project-container {
+        width: 100%;
+        margin: 20px auto;
+    }
 }
